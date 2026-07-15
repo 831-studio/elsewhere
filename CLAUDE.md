@@ -9,6 +9,22 @@ Potential tagline: "Every trip, curated with recommendations by people you trust
 "Elsewhere" is an invitation to explore and enjoy life beyond your everyday environment — to ask: what is life like elsewhere? It should feel like a well-traveled friend who always knows the right place — not a booking engine dressed up in friendly copy. The tone is smart, whimsical, and grounded. The design should make trip planning feel like part of the experience, not a chore before it.
 
 ## Design aesthetic
+## Design system (exploration in progress — light v1)
+
+Tokens live in `theme.ts` — the single source of truth. Do not hardcode color or type. Values below are the current working direction, not final — expect them to shift while we explore. Iterate in `theme.ts` and screens; don't treat any choice here as locked until we confirm a final direction.
+
+**Typeface:** currently exploring Schibsted Grotesk (base UI) + Bricolage Grotesque (display / "magazine moment" headlines only). Plus Jakarta Sans was the earlier single-typeface direction. Hierarchy comes from size, weight, and spacing.
+
+**Type scale:** Display 44/46 · Title 26/30 · Heading 20/25 · Body 16/24 · Meta 13/18 · Label 12 (uppercase, +0.08 tracking)
+
+**Color (light):**
+- bg / surface `#FFFFFF`
+- ink (text) `#211C17` — warm near-black
+- ink-muted `#717171` — secondary text
+- hairline `#EAEAEA` — borders, dividers
+- accent `#3D43FB` — electric blue; actions, links, small highlights only
+
+Black-white-plus-one-accent structure (Pinterest's logic): neutral base, one striking accent. Dark mode to follow as a parallel token set.
 Sophisticated and artistic. Trip planning should feel delightful — like flipping through a beautifully curated travel magazine, not filling out a form.
 
 References: Pinterest, VSCO, Retro (photo app), ShopMy, Artsy, Intercom
@@ -49,4 +65,5 @@ Duffel (flights), Hotelbeds (hotels), GetYourGuide + Viator (experiences), Plaid
 
 ## Status
 Expo project scaffolded. Core screens, API stack, and personas defined.
-Design system TBD — do not build screens until typography and color are defined and added here.
+Design system exploration in progress (light v1) — see Design system section. Tokens in theme.ts.
+Phase 1 portfolio: 9-screen plan and experience principles in design/screen-plan.md.
