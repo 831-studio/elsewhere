@@ -21,7 +21,7 @@ export function TheCard({ flat = false }: { flat?: boolean }) {
   return (
     <View style={[styles.card, flat && styles.cardFlat]}>
       {/* Venue photography — Central is the hero */}
-      <Image source={require('../../assets/central_sample_image.png')} style={styles.photo} contentFit="cover" />
+      <Image source={require('../../assets/central_new_res_seafood.png')} style={styles.photo} contentFit="cover" />
 
       <View style={styles.body}>
         {/* The alert — a clean chip, not a banner */}
